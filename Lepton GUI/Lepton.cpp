@@ -1,5 +1,4 @@
 /*
- * 
  * Lepton.cpp
  * 
  * Copyright 2016 Ames Grisanti <ames.grisanti@gmail.com>
