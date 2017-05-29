@@ -74,16 +74,16 @@ int main(int argc, char **argv)
 	//connect Freeze Off to the thread's video freeze action
 	QObject::connect(ui.FreezeOff, SIGNAL(clicked()), thread, SLOT(liveVideo()));
 
-	//connect AGC On to the thread's video freeze action
+    //connect AGC On to the thread's video AGC on action
 	QObject::connect(ui.AGCOn, SIGNAL(clicked()), thread, SLOT(enableAGC()));
 
-	//connect AGC Off to the thread's video freeze action
+    //connect AGC Off to the thread's video AGC on action
 	QObject::connect(ui.AGCOff, SIGNAL(clicked()), thread, SLOT(disableAGC()));
 
-	//connect SB NUC On to the thread's video freeze action
+    //connect SB NUC On to the thread's video SB NUC on action
 	QObject::connect(ui.SBNUCOn, SIGNAL(clicked()), thread, SLOT(enableSBNUC()));
 
-	//connect SB NUC Off to the thread's video freeze action
+    //connect SB NUC Off to the thread's video SB NUC on action
 	QObject::connect(ui.SBNUCOff, SIGNAL(clicked()), thread, SLOT(disableSBNUC()));
 
 	thread->start();
