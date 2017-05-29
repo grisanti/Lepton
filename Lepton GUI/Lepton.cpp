@@ -35,7 +35,7 @@
 #define IMAGE_ROWS 480
 
 int main(int argc, char **argv)
- {
+{
 	QApplication app(argc, argv);
 	QWidget *widget = new QWidget;
 	QImage myImage;
