@@ -4,7 +4,7 @@ FORMS       = Lepton.ui
 QT += core gui
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = 
+TARGET = Lepton
 
 RPI_LIBS = ../
 LEPTONSDK = leptonSDKEmb32PUB
@@ -27,4 +27,4 @@ SOURCES += *.cpp
 
 unix:LIBS += -L$${RPI_LIBS}/$${LEPTONSDK}/Debug -lLEPTON_SDK
 
-unix:QMAKE_CLEAN += -r $(OBJECTS_DIR) $${MOC_DIR}
+unix:QMAKE_CLEAN += $(OBJECTS_DIR)/* $${MOC_DIR}/*
